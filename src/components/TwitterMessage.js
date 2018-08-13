@@ -16,7 +16,7 @@ class TwitterMessage extends React.Component {
   }
   
   characterCounter = () => {
-    return `${this.props.maxChars - this.state.value.length}`
+    return this.props.maxChars - this.state.value.length
   }
 
   render() {
